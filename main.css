@@ -1,0 +1,74 @@
+/* box sizing w/ inheritance*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: pink;
+}
+
+/* canvas div */
+#canvas {
+  height: 1000px;
+  width: 1500px;
+  margin: auto;
+  background-color: black;
+  color: white;
+}
+/* accordion div */
+.accordion {
+  height: 600px;
+  width: 600px;
+  position: relative;
+  left: 100px;
+  top: 150px;
+  float: left;
+  text-align: center;
+  border: 3px pink solid;
+}
+/* img carousel div */
+.carousel {
+  height: 600px;
+  width: 600px;
+  position: relative;
+  left: 800px;
+  top: 150px;
+  background-color: white;
+  border: 3px pink solid;
+}
+
+
+
+/* my first animation */
+@keyframes myMove {
+  from {max-height: 0px}
+  to {max-height: 50px}
+}
+
+/* p elements */
+.saucy {
+  max-height: 0px;
+  overflow: hidden;
+}
+
+
+.animation {
+  animation-name: myMove;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+
+
+
+/* header/section titles */
+h4 {
+  border: 2px solid pink;
+  border-length: 20px;
+  color: black;
+  background-color: pink;
+}
